@@ -2,8 +2,8 @@
 %define         _class          Net
 %define         _subclass       NNTP
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - Communicate with an NNTP server
-Summary(pl):	%{_class}_%{_subclass} - Komunikacja z serverem NNTP
+Summary:	%{_pearname} - Communicate with an NNTP server
+Summary(pl):	%{_pearname} - Komunikacja z serverem NNTP
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	1
