@@ -2,15 +2,16 @@
 %define         _class          Net
 %define         _subclass       NNTP
 %define		_pearname	%{_class}_%{_subclass}
+%define		_status		alpha
 Summary:	%{_pearname} - Communicate with an NNTP server
 Summary(pl):	%{_pearname} - Komunikacja z serverem NNTP
 Name:		php-pear-%{_pearname}
-Version:	0.2
+Version:	0.9.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	7f2591f11bef81202dd4a09070a33a28
+# Source0-md5:	229fdf5d74bbfd44863818690ad89941
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -22,19 +23,24 @@ Complete class for communicating with an NNTP server (this is: the
 USENET), including: post, view, list, authentication, overview, header
 manipulation, NNTP commands debugger, etc.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Kompletna klasa do komunikacja z serwerem NNTP (USENET), zawieraj±ca:
 wysy³anie, przegl±danie, listowanie, autentyfikacja, przegl±d,
 manipulacje nag³ówkami, debugger komend NNTP, etc.
+
+Ta klasa ma w PEAR status %{_status}.
 
 %prep
 %setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,3 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/README
 %{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/%{_class}/%{_subclass}
