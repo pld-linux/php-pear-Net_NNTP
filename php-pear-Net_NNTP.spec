@@ -1,10 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Net
-%define         _subclass       NNTP
+%define		_class		Net
+%define		_subclass	NNTP
 %define		_pearname	%{_class}_%{_subclass}
 %define		_status		alpha
-Summary:	%{_pearname} - Communicate with an NNTP server
-Summary(pl):	%{_pearname} - Komunikacja z serverem NNTP
+
+Summary:	%{_pearname} - communicate with an NNTP server
+Summary(pl):	%{_pearname} - komunikacja z serverem NNTP
 Name:		php-pear-%{_pearname}
 Version:	0.10.1
 Release:	1
