@@ -2,17 +2,17 @@
 %define		_class		Net
 %define		_subclass	NNTP
 %define		_pearname	%{_class}_%{_subclass}
-%define		_status		alpha
+%define		_status		stable
 
 Summary:	%{_pearname} - communicate with an NNTP server
 Summary(pl):	%{_pearname} - komunikacja z serwerem NNTP
 Name:		php-pear-%{_pearname}
-Version:	0.10.3
-Release:	2
+Version:	1.0.0
+Release:	1
 License:	W3C / PHP 2.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b46a324e8e6a46d7d449b5bb45a38bb2
+# Source0-md5:	d1717c38097248425e2407978d36548c
 URL:		http://pear.php.net/package/Net_NNTP/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
