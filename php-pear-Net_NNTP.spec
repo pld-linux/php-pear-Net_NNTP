@@ -5,7 +5,7 @@
 %define		_status		alpha
 
 Summary:	%{_pearname} - communicate with an NNTP server
-Summary(pl):	%{_pearname} - komunikacja z serverem NNTP
+Summary(pl):	%{_pearname} - komunikacja z serwerem NNTP
 Name:		php-pear-%{_pearname}
 Version:	0.10.3
 Release:	1
