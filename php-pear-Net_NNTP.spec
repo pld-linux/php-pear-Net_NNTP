@@ -8,7 +8,7 @@ Summary:	%{_pearname} - communicate with an NNTP server
 Summary(pl):	%{_pearname} - komunikacja z serwerem NNTP
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	W3C / PHP 2.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -27,9 +27,9 @@ manipulation, NNTP commands debugger, etc.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Kompletna klasa do komunikacja z serwerem NNTP (USENET), zawieraj±ca:
-wysy³anie, przegl±danie, listowanie, autentyfikacja, przegl±d,
-manipulacje nag³ówkami, debugger komend NNTP, etc.
+Kompletna klasa umo¿liwiaj±ca komunikacjê z serwerem NNTP (USENET),
+zawieraj±ca: wysy³anie, przegl±danie, listowanie, uwierzytelnianie,
+przegl±d, manipulacjê nag³ówkami, debugger komend NNTP, etc.
 
 Ta klasa ma w PEAR status %{_status}.
 
@@ -38,10 +38,11 @@ Ta klasa ma w PEAR status %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Protocol
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/
+install %{_pearname}-%{version}/%{_subclass}/Protocol/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Protocol/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
