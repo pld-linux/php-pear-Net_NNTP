@@ -24,7 +24,7 @@ Complete class for communicating with an NNTP server (this is: the
 USENET), including: post, view, list, authentication, overview, header
 manipulation, NNTP commands debugger, etc.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Kompletna klasa do komunikacja z serwerem NNTP (USENET), zawieraj±ca:
