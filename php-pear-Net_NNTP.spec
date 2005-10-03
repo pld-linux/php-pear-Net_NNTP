@@ -8,7 +8,7 @@ Summary:	%{_pearname} - communicate with an NNTP server
 Summary(pl):	%{_pearname} - komunikacja z serwerem NNTP
 Name:		php-pear-%{_pearname}
 Version:	1.0.1
-Release:	1.1
+Release:	1.2
 License:	W3C / PHP 2.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,6 +16,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Net_NNTP/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
+Requires:	php-pear-Net_Socket >= 1.0.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
