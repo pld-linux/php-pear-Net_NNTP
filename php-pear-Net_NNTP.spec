@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	c51bfa31c55d2f784171373d9532980c
 URL:		http://pear.php.net/package/Net_NNTP/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-Net_Socket >= 1.0.3
