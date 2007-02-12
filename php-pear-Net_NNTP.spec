@@ -5,7 +5,7 @@
 %define		_status		stable
 
 Summary:	%{_pearname} - communicate with an NNTP server
-Summary(pl):	%{_pearname} - komunikacja z serwerem NNTP
+Summary(pl.UTF-8):   %{_pearname} - komunikacja z serwerem NNTP
 Name:		php-pear-%{_pearname}
 Version:	1.0.1
 Release:	3
@@ -29,10 +29,10 @@ manipulation, NNTP commands debugger, etc.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Kompletna klasa umo¿liwiaj±ca komunikacjê z serwerem NNTP (USENET),
-zawieraj±ca: wysy³anie, przegl±danie, listowanie, uwierzytelnianie,
-przegl±d, manipulacjê nag³ówkami, debugger komend NNTP, etc.
+%description -l pl.UTF-8
+Kompletna klasa umoÅ¼liwiajÄ…ca komunikacjÄ™ z serwerem NNTP (USENET),
+zawierajÄ…ca: wysyÅ‚anie, przeglÄ…danie, listowanie, uwierzytelnianie,
+przeglÄ…d, manipulacjÄ™ nagÅ‚Ã³wkami, debugger komend NNTP, etc.
 
 Ta klasa ma w PEAR status %{_status}.
 
