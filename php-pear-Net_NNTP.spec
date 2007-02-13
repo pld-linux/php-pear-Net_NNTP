@@ -5,7 +5,7 @@
 %define		_status		stable
 
 Summary:	%{_pearname} - communicate with an NNTP server
-Summary(pl.UTF-8):   %{_pearname} - komunikacja z serwerem NNTP
+Summary(pl.UTF-8):	%{_pearname} - komunikacja z serwerem NNTP
 Name:		php-pear-%{_pearname}
 Version:	1.0.1
 Release:	3
