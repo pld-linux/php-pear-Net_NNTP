@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 %define		_status		alpha
 %define		subver	a1
-%define		rel		1
+%define		rel		2
 Summary:	%{_pearname} - communicate with an NNTP server
 Summary(pl.UTF-8):	%{_pearname} - komunikacja z serwerem NNTP
 Name:		php-pear-%{_pearname}
@@ -15,12 +15,13 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
 # Source0-md5:	491f1926dd8d9189b771d895642bf8c3
 URL:		http://pear.php.net/package/Net_NNTP/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.5
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-Net_Socket >= 1.0.3
-Requires:	php-pear-PEAR-core >= 1:1.4.5
+Requires:	php-pear-PEAR-core >= 1:1.4.0
+Suggests:	php-pear-Log
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
