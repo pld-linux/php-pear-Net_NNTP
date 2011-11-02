@@ -1,4 +1,4 @@
-%define		subver	RC1
+%define		subver	RC2
 %define		rel		1
 %define		status		alpha
 %define		pearname	Net_NNTP
@@ -11,7 +11,7 @@ Release:	1.%{subver}.%{rel}
 License:	W3C / PHP 2.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}%{subver}.tgz
-# Source0-md5:	fd4468901ce5325146944f71ea92ac70
+# Source0-md5:	5a141cf3e33e2b2dc8078c7341b423c0
 URL:		http://pear.php.net/package/Net_NNTP/
 BuildRequires:	php-pear-PEAR >= 1:1.4.5
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
