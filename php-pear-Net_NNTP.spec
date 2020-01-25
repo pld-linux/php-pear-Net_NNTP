@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Net_NNTP
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - communicate with an NNTP server
 Summary(pl.UTF-8):	%{pearname} - komunikacja z serwerem NNTP
 Name:		php-pear-%{pearname}
