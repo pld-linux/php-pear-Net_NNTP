@@ -4,7 +4,7 @@ Summary:	%{pearname} - communicate with an NNTP server
 Summary(pl.UTF-8):	%{pearname} - komunikacja z serwerem NNTP
 Name:		php-pear-%{pearname}
 Version:	1.5.2
-Release:	2
+Release:	3
 License:	W3C / PHP 2.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
